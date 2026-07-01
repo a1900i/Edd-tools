@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مجموعه ابزارهای من</title>
+  <!-- فونت و آیکون -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #f4f6fa;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      padding: 30px 20px;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container {
+      max-width: 1200px;
+      width: 100%;
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: #1e293b;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    h1 i { color: #3b82f6; }
+    .sub {
+      color: #475569;
+      margin-bottom: 40px;
+      border-right: 4px solid #3b82f6;
+      padding-right: 16px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+    .card {
+      background: white;
+      border-radius: 28px;
+      padding: 28px 22px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+      border: 1px solid #e2e8f0;
+      transition: 0.3s;
+      text-decoration: none;
+      color: #1e293b;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+      border-color: #3b82f6;
+    }
+    .card i {
+      font-size: 2.8rem;
+      color: #3b82f6;
+      margin-bottom: 12px;
+    }
+    .card h2 {
+      font-size: 1.4rem;
+      margin-bottom: 6px;
+    }
+    .card p {
+      color: #64748b;
+      font-size: 0.95rem;
+      flex: 1;
+    }
+    .card .btn {
+      margin-top: 16px;
+      background: #3b82f6;
+      color: white;
+      border: none;
+      padding: 10px 0;
+      border-radius: 40px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.2s;
+      text-align: center;
+    }
+    .card .btn:hover {
+      background: #2563eb;
+    }
+    @media (max-width: 600px) {
+      h1 { font-size: 1.8rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1><i class="fas fa-toolbox"></i> جعبه‌ابزار من</h1>
+    <div class="sub">چند ابزار کاربردی، رایگان و بدون نیاز به نصب – همه در مرورگر شما</div>
+    <div class="grid">
+      <!-- کارت واترمارک -->
+      <a href="tools/watermark/index.html" class="card">
+        <i class="fas fa-water"></i>
+        <h2>واترمارک تکراری</h2>
+        <p>متن دلخواه را به صورت الگوی تکراری روی تصاویر و PDF بزنید. با تنظیم شفافیت، چرخش و فونت.</p>
+        <div class="btn">استفاده کن</div>
+      </a>
+      <!-- کارت ویرایشگر عکس -->
+      <a href="tools/photo-editor/index.html" class="card">
+        <i class="fas fa-wand-magic-sparkles"></i>
+        <h2>ادیتور حرفه‌ای عکس</h2>
+        <p>۲۶ پریست فیلم‌گونه، اسلایدر قبل/بعد، امکان ذخیره با کیفیت بالا.</p>
+        <div class="btn">استفاده کن</div>
+      </a>
+      <!-- کارت‌های بعدی را همین‌طور اضافه کن -->
+    </div>
+  </div>
+</body>
+</html>
